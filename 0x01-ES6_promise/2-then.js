@@ -6,6 +6,6 @@ export default function handleResponseFromAPI(promise) {
       body: 'Success',
     }) : reject(new Error(''));
   });
-  pr.then(() => { 'Got a response from the API'; });
+  pr.then(() => { console.log('Got a response from the API'); });
   return pr;
 }
