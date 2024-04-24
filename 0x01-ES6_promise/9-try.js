@@ -1,5 +1,6 @@
 export default function guardrail(mathFunction) {
-  const queue = [];
+  // eslint-disable-next-line prefer-const
+  let queue = [];
   try {
     queue.push(mathFunction);
   } catch (e) {
@@ -7,4 +8,5 @@ export default function guardrail(mathFunction) {
   } finally {
     queue.push('Guardrail was processed');
   }
+  return queue;
 }
