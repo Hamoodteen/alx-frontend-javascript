@@ -1,13 +1,10 @@
 export default function getFullResponseFromAPI(success) {
   const pr = new Promise((resolve, reject) => {
-    if (success) {
-      resolve({
-        status: 200,
-        body: 'success',
-      });
-    } else {
-      reject(new Error('The fake API is not working currently'));
-    }
+    // eslint-disable-next-line no-unused-expressions
+    success ? resolve({
+      status: 200,
+      body: 'Success',
+    }) : reject(new Error('The fake API is not working currently'));
   });
   return pr;
 }
