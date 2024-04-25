@@ -17,4 +17,8 @@ export default class Car {
   get color() {
     return this._color;
   }
+
+  cloneCar() {
+    return new Car(this._brand, this._motor, this._color);
+  }
 }
