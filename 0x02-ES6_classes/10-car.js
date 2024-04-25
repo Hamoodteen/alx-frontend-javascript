@@ -18,8 +18,7 @@ export default class Car {
     return this._color;
   }
 
-  // eslint-disable-next-line class-methods-use-this
   cloneCar() {
-    return new Car(...undefined);
+    this.constructor(this._brand, this._motor, this._color);
   }
 }
