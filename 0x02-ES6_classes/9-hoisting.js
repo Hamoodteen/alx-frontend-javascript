@@ -35,7 +35,7 @@ export class StudentHolberton {
 
   // eslint-disable-next-line class-methods-use-this
   get fullStudentDescription() {
-    return `${this._firstName} ${this._lastName} - ${this._holbertonClass}`;
+    return `${this._firstName} ${this._lastName} - ${this._holbertonClass} - ${this._holbertonClass.location}`;
   }
 }
 
